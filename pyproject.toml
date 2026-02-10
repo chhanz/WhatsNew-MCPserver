@@ -1,0 +1,19 @@
+[project]
+name = "whats-new-mcp"
+version = "0.1.0"
+description = "AWS What's New MCP Server (JSON API based)"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/whats_new_mcp"]
+
+[project.scripts]
+whats-new-mcp = "whats_new_mcp.server:main"

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "whats-new-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from", "/path/to/WhatsNew-MCPserver",
+        "whats-new-mcp"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
